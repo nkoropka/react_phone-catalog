@@ -2,6 +2,12 @@ import { Product, ProductDetail } from '../types';
 
 const BASE_URL = import.meta.env.BASE_URL;
 
+const getFullUrl = (path: string) => {
+  const base = BASE_URL.endsWith('/') ? BASE_URL : `${BASE_URL}/`;
+
+  return `${base}${path.startsWith('/') ? path.slice(1) : path}`;
+};
+
 async function request<T>(url: string): Promise<T> {
   const response = await fetch(url);
 
@@ -15,16 +21,18 @@ async function request<T>(url: string): Promise<T> {
 }
 
 export const getProducts = (): Promise<Product[]> => {
-  return request<Product[]>(`${BASE_URL}api/products.json`);
+  return request<Product[]>(getFullUrl('api/products.json'));
 };
 
 export const getProductDetails = async (
   productId: string,
 ): Promise<ProductDetail> => {
   const [phones, tablets, accessories] = await Promise.all([
-    request<ProductDetail[]>(`${BASE_URL}api/phones.json`).catch(() => []),
-    request<ProductDetail[]>(`${BASE_URL}api/tablets.json`).catch(() => []),
-    request<ProductDetail[]>(`${BASE_URL}api/accessories.json`).catch(() => []),
+    request<ProductDetail[]>(getFullUrl('api/phones.json')).catch(() => []),
+    request<ProductDetail[]>(getFullUrl('api/tablets.json')).catch(() => []),
+    request<ProductDetail[]>(getFullUrl('api/accessories.json')).catch(
+      () => [],
+    ),
   ]);
 
   const allDetails = [...phones, ...tablets, ...accessories];
