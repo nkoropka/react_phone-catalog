@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { useFavourites } from '../../../../context/FavouritesContext';
 import { Link } from 'react-router-dom';
 import { Product, useCart } from '../../../../context/CartContext';
+import { getNormalizedImagePath } from '../../getNormalizedImagePath';
 
 interface Props {
   product: Product;
@@ -30,7 +31,7 @@ export const ProductCard: React.FC<Props> = ({ product }) => {
     ? isFavourite(id)
     : favourites.some(item => item.id === id);
 
-  const imageSrc = image ? (image.startsWith('/') ? image : `/${image}`) : '';
+  const imageSrc = getNormalizedImagePath(image);
 
   const handleCartClick = (event: React.MouseEvent) => {
     event.preventDefault();
@@ -104,11 +105,11 @@ export const ProductCard: React.FC<Props> = ({ product }) => {
           }
         >
           <img
-            src={
+            src={getNormalizedImagePath(
               inFavourites
-                ? '/img/icons/heart-active.svg'
-                : '/img/icons/heart.svg'
-            }
+                ? 'img/icons/heart-active.svg'
+                : 'img/icons/heart.svg',
+            )}
             alt=""
             aria-hidden="true"
           />

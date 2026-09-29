@@ -66,7 +66,7 @@ export const HomePage: React.FC<Props> = ({ products }) => {
             <div className={`${styles.imgWrapper} ${styles.imgWrapperPhones}`}>
               <img
                 className={styles.categoryImg}
-                src="/img/category-mobile-phones.png"
+                src="./img/category-mobile-phones.png"
                 alt="Mobile phones"
               />
             </div>
@@ -80,7 +80,7 @@ export const HomePage: React.FC<Props> = ({ products }) => {
             <div className={`${styles.imgWrapper} ${styles.imgWrapperTablets}`}>
               <img
                 className={styles.categoryImg}
-                src="/img/category-tablet.png"
+                src="./img/category-tablet.png"
                 alt="Tablets"
               />
             </div>
@@ -96,7 +96,7 @@ export const HomePage: React.FC<Props> = ({ products }) => {
             >
               <img
                 className={styles.categoryImg}
-                src="/img/category-accessories-1.png"
+                src="./img/category-accessories-1.png"
                 alt="Accessories"
               />
             </div>

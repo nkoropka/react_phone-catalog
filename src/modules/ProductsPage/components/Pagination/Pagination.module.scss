@@ -12,6 +12,10 @@
   }
 }
 
+.button {
+  border: 1px solid $c-icons;
+}
+
 .button,
 .pageButton {
   display: inline-flex;
@@ -43,10 +47,6 @@
   &:hover:not(:disabled) {
     border: 1px solid $c-primary;
   }
-}
-
-.button {
-  border: 1px solid $c-icons;
 }
 
 .list {

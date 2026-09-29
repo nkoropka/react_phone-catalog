@@ -34,7 +34,7 @@
 }
 
 .title {
-  margin: 0 0 16px 0;
+  margin: 0 0 16px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
@@ -46,7 +46,7 @@
 }
 
 .description {
-  margin: 0 0 32px 0;
+  margin: 0 0 32px;
   font-size: 14px;
   line-height: 1.5;
   color: $c-secondary;
@@ -67,7 +67,7 @@
 
   font-size: 14px;
   font-weight: 600;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 
   background-color: $c-primary;

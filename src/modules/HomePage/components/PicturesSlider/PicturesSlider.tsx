@@ -5,22 +5,22 @@ import { Link } from 'react-router-dom';
 const BANNERS = [
   {
     id: 1,
-    imgMobile: '/img/banners/banner1-mob-slider.png',
-    imgWeb: '/img/banners/banner1-web-slider.png',
+    imgMobile: './img/banners/banner1-mob-slider.png',
+    imgWeb: './img/banners/banner1-web-slider.png',
     alt: 'Banner Mobile Phones',
     link: '/phones',
   },
   {
     id: 2,
-    imgMobile: '/img/banners/banner2-mob-slider.png',
-    imgWeb: '/img/banners/banner2-web-slider.png',
+    imgMobile: './img/banners/banner2-mob-slider.png',
+    imgWeb: './img/banners/banner2-web-slider.png',
     alt: 'Banner Tablets',
     link: '/tablets',
   },
   {
     id: 3,
-    imgMobile: '/img/banners/banner3-mob-slider.png',
-    imgWeb: '/img/banners/banner3-web-slider.png',
+    imgMobile: './img/banners/banner3-mob-slider.png',
+    imgWeb: './img/banners/banner3-web-slider.png',
     alt: 'Banner Accessories',
     link: '/accessories',
   },
@@ -68,7 +68,7 @@ export const PicturesSlider: React.FC = () => {
           aria-label="Previous slide"
           data-cy="prevSlideButton"
         >
-          <img src="/img/icons/arrow-left.svg" alt="" aria-hidden="true" />
+          <img src="./img/icons/arrow-left.svg" alt="" aria-hidden="true" />
         </button>
 
         <div className={styles.viewport}>
@@ -101,7 +101,7 @@ export const PicturesSlider: React.FC = () => {
           aria-label="Next slide"
           data-cy="nextSlideButton"
         >
-          <img src="/img/icons/arrow-right.svg" alt="" aria-hidden="true" />
+          <img src="./img/icons/arrow-right.svg" alt="" aria-hidden="true" />
         </button>
       </div>
 

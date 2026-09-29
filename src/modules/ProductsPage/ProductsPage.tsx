@@ -148,13 +148,13 @@ export const ProductsPage = ({ category, title }: Props) => {
         <Link to="/" className={styles.breadcrumbsLink}>
           <img
             className={styles.btnHome}
-            src="/img/icons/home.svg"
+            src="./img/icons/home.svg"
             alt="Home"
           />
         </Link>
 
         <img
-          src="/img/icons/arrow-right-disabled.svg"
+          src="./img/icons/arrow-right-disabled.svg"
           alt=""
           aria-hidden="true"
         />

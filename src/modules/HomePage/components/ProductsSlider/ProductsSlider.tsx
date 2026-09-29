@@ -47,8 +47,8 @@ export const ProductSlider: React.FC<Props> = ({ products, title }) => {
             <img
               src={
                 currentIndex === 0
-                  ? '/img/icons/arrow-left-disabled.svg'
-                  : '/img/icons/arrow-left.svg'
+                  ? './img/icons/arrow-left-disabled.svg'
+                  : './img/icons/arrow-left.svg'
               }
               alt=""
             />
@@ -64,8 +64,8 @@ export const ProductSlider: React.FC<Props> = ({ products, title }) => {
             <img
               src={
                 currentIndex >= maxIndex
-                  ? '/img/icons/arrow-right-disabled.svg'
-                  : '/img/icons/arrow-right.svg'
+                  ? './img/icons/arrow-right-disabled.svg'
+                  : './img/icons/arrow-right.svg'
               }
               alt=""
             />

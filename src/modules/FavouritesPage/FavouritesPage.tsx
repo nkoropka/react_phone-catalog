@@ -14,12 +14,12 @@ export const FavouritesPage: React.FC = () => {
         <Link to="/" className={styles.breadcrumbsLink}>
           <img
             className={styles.btnHome}
-            src="/img/icons/home.svg"
+            src="./img/icons/home.svg"
             alt="Home"
           />
         </Link>
 
-        <img src="/img/icons/arrow-right-disabled.svg" alt="true" />
+        <img src="./img/icons/arrow-right-disabled.svg" alt="true" />
         <span className={styles.breadcrumbsLink}>Favourites</span>
       </div>
 

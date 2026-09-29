@@ -74,8 +74,8 @@ export const Pagination: React.FC<Props> = ({
         <img
           src={
             isFirstPage
-              ? '/img/icons/arrow-left-disabled.svg'
-              : '/img/icons/arrow-left.svg'
+              ? './img/icons/arrow-left-disabled.svg'
+              : './img/icons/arrow-left.svg'
           }
           alt=""
           aria-hidden="true"
@@ -116,8 +116,8 @@ export const Pagination: React.FC<Props> = ({
         <img
           src={
             isLastPage
-              ? '/img/icons/arrow-right-disabled.svg'
-              : '/img/icons/arrow-right.svg'
+              ? './img/icons/arrow-right-disabled.svg'
+              : './img/icons/arrow-right.svg'
           }
           alt=""
           aria-hidden="true"

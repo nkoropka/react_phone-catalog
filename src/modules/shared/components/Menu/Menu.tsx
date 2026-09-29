@@ -54,7 +54,7 @@ export const Menu: React.FC<Props> = ({ isOpen, onClose }) => {
     <aside className={styles.menu}>
       <div className={styles.topBar}>
         <Link to="/" className={styles.logo} onClick={onClose}>
-          <img src="/img/icons/logo-dark.svg" alt="Nice Gadgets Logo" />
+          <img src="./img/icons/logo-dark.svg" alt="Nice Gadgets Logo" />
         </Link>
 
         <button

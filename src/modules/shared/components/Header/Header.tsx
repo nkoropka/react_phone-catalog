@@ -28,8 +28,8 @@ export const Header: React.FC = () => {
   };
 
   const logoSrc = isMenuOpen
-    ? '/img/icons/logo-dark.svg'
-    : '/img/icons/logo.svg';
+    ? './img/icons/logo-dark.svg'
+    : './img/icons/logo.svg';
 
   return (
     <>

@@ -17,7 +17,7 @@ import { FavouritesPage } from './modules/FavouritesPage';
 const products = productsData as Product[];
 
 export const Root = () => (
-  <Router basename="/react_phone-catalog">
+  <Router>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<HomePage products={products} />} />

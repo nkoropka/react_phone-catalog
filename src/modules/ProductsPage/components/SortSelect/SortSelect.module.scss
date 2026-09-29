@@ -62,17 +62,6 @@
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
 
-.option {
-  padding: 0;
-
-  &--selected {
-    .optionButton {
-      background-color: $c-background;
-      color: $c-primary;
-    }
-  }
-}
-
 .optionButton {
   width: 100%;
   padding: 7px 12px;
@@ -89,6 +78,17 @@
 
   @media (hover: hover) {
     &:hover {
+      background-color: $c-background;
+      color: $c-primary;
+    }
+  }
+}
+
+.option {
+  padding: 0;
+
+  &--selected {
+    .optionButton {
       background-color: $c-background;
       color: $c-primary;
     }

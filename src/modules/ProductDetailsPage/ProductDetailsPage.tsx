@@ -184,18 +184,18 @@ export const ProductDetailsPage: React.FC = () => {
         <Link to="/" className={styles.breadcrumbsLink}>
           <img
             className={styles.btnHome}
-            src="/img/icons/home.svg"
+            src="./img/icons/home.svg"
             alt="Home"
           />
         </Link>
 
-        <img src="/img/icons/arrow-right-disabled.svg" alt="" />
+        <img src="./img/icons/arrow-right-disabled.svg" alt="" />
 
         <Link to={`/${product.category}`} className={styles.breadcrumbsLink}>
           {product.category}
         </Link>
 
-        <img src="/img/icons/arrow-right-disabled.svg" alt="" />
+        <img src="./img/icons/arrow-right-disabled.svg" alt="" />
 
         <span className={styles.breadcrumbsCurrent}>{product.name}</span>
       </div>
@@ -206,7 +206,7 @@ export const ProductDetailsPage: React.FC = () => {
         onClick={() => navigate(-1)}
         data-cy="backButton"
       >
-        <img src="/img/icons/arrow-left.svg" alt="" />
+        <img src="./img/icons/arrow-left.svg" alt="" />
         <span>Back</span>
       </button>
 
@@ -318,8 +318,8 @@ export const ProductDetailsPage: React.FC = () => {
             <img
               src={
                 isCurrentFavourite
-                  ? '/img/icons/heart-active.svg'
-                  : '/img/icons/heart.svg'
+                  ? './img/icons/heart-active.svg'
+                  : './img/icons/heart.svg'
               }
               alt="Favourite"
             />

@@ -42,7 +42,7 @@ export const CartPage: React.FC = () => {
         onClick={() => navigate(-1)}
         data-cy="backButton"
       >
-        <img src="/img/icons/arrow-left.svg" alt="" aria-hidden="true" />
+        <img src="./img/icons/arrow-left.svg" alt="" aria-hidden="true" />
         <span>Back</span>
       </button>
 
@@ -66,7 +66,7 @@ export const CartPage: React.FC = () => {
                     aria-label="Remove item"
                   >
                     <img
-                      src="/img/icons/close-grey.svg"
+                      src="./img/icons/close-grey.svg"
                       alt=""
                       aria-hidden="true"
                     />
@@ -105,8 +105,8 @@ export const CartPage: React.FC = () => {
                       <img
                         src={
                           quantity === 1
-                            ? '/img/icons/minus-disabled.svg'
-                            : '/img/icons/minus-active.svg'
+                            ? './img/icons/minus-disabled.svg'
+                            : './img/icons/minus-active.svg'
                         }
                         alt=""
                         aria-hidden="true"
@@ -120,7 +120,7 @@ export const CartPage: React.FC = () => {
                       aria-label="Increase quantity"
                     >
                       <img
-                        src="/img/icons/plus-active.svg"
+                        src="./img/icons/plus-active.svg"
                         alt=""
                         aria-hidden="true"
                       />
