@@ -7,9 +7,14 @@ import classNames from 'classnames';
 interface Props {
   title: string;
   products: Product[];
+  isDiscountHidden?: boolean;
 }
 
-export const ProductSlider: React.FC<Props> = ({ products, title }) => {
+export const ProductSlider: React.FC<Props> = ({
+  products,
+  title,
+  isDiscountHidden = false,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const CARD_WIDTH = 212;
@@ -82,7 +87,10 @@ export const ProductSlider: React.FC<Props> = ({ products, title }) => {
         >
           {products.map(product => (
             <div key={product.id} className={styles.cardWrapper}>
-              <ProductCard product={product} />
+              <ProductCard
+                product={product}
+                isDiscountHidden={isDiscountHidden}
+              />
             </div>
           ))}
         </div>

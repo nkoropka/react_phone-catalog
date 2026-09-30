@@ -56,7 +56,11 @@ export const HomePage: React.FC<Props> = ({ products }) => {
         <PicturesSlider />
       </section>
       <section className={styles.section}>
-        <ProductSlider products={brandNewProducts} title="Brand new models" />
+        <ProductSlider
+          products={brandNewProducts}
+          title="Brand new models"
+          isDiscountHidden={true}
+        />
       </section>
 
       <section className={styles.section}>

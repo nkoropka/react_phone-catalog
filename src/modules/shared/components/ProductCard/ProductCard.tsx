@@ -7,9 +7,13 @@ import { getNormalizedImagePath } from '../../getNormalizedImagePath';
 
 interface Props {
   product: Product;
+  isDiscountHidden?: boolean;
 }
 
-export const ProductCard: React.FC<Props> = ({ product }) => {
+export const ProductCard: React.FC<Props> = ({
+  product,
+  isDiscountHidden = false,
+}) => {
   const {
     name: title,
     image,
@@ -61,7 +65,7 @@ export const ProductCard: React.FC<Props> = ({ product }) => {
       <div className={styles.priceBlock}>
         <span className={styles.price}>${price}</span>
 
-        {fullPrice && fullPrice > price && (
+        {!isDiscountHidden && fullPrice && fullPrice > price && (
           <span className={styles.fullPrice}>${fullPrice}</span>
         )}
       </div>

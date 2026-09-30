@@ -64,13 +64,16 @@
   @include on-desktop {
     grid-column: span 8;
   }
+
+  &:hover {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .imgWrapper {
   width: 100%;
-
-  aspect-ratio: 1 / 1;
   border-radius: 8px;
+  aspect-ratio: 1 / 1;
   margin-bottom: 24px;
   overflow: hidden;
 }
